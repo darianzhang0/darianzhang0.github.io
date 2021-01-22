@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8"/>
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>DARIAN ZHANG</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/me.JPG)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/me.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Hey there, I'm Darian. I'm an undergraduate student currently living in Ontario, Canada with an interest in coding.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/website.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/website.png">
+                        </div>
+
+                        <div class="subtitle">
+                            This website was built using HTML, CSS and Javascript. I thought making a website would be fun so I looked for tutorials and here we are now.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/education.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/education.png">
+                        </div>
+
+                        <div class="subtitle">
+                            I'm currently enrolled in Honours Mathematics at the University of Waterloo. Although I have a lot of schoolwork, I try to make time for projects like this.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/boardgames.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/boardgames.png">
+                        </div>
+
+                        <div class="subtitle">
+                            One of my favourite pastimes is playing board games with my friends. In high school, I even started a board games club to continue fueling my addiction.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/coding.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Through university, I've gained knowledge of DrRacket and I'm developing proficiency in C and R. I've also been teaching myself to use other languages such as Java, HTML and CSS.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/movies.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/movies.png">
+                        </div>
+
+                        <div class="subtitle">
+                            I love watching movies. I try to not limit myself to any one genre and watch whatever I can get my hands on. I especially love watching classic movies from way back in the day.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/goals.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/goals.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Why make a website? Well, I did this because I enjoy coding and I would hope to eventually find a job as a software developer or perhaps some kind of data analyst. But I guess I'll see what the future holds.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/project.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/project.png">
+                        </div>
+
+                        <div class="subtitle">
+                            One of the projects I'm working on is a text-based adventure game in Java with my friend. We implemented features like fighting, stats, levelling up and more. It's still unfinished but what we have so far is pretty fun.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/secret.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/secret.png">
+                        </div>
+
+                        <div class="subtitle">
+                            When making this site, I wanted a 9x9 grid but I only fit 8 boxes and having different sized boxes would look gross so congrats on finding this. Here have a cookie.
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
