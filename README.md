@@ -1,2 +1,2 @@
-# darianzhang0.github.io
-Personal Website
+# Darian Zhang Personal Website
+https://darianzhang0.github.io/
